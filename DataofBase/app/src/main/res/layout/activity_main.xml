@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvidCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="DNI" />
+
+        <EditText
+            android:id="@+id/etIdCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="DNI"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/tvPersonalData"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="DATOS PERSONALES" />
+
+        <EditText
+            android:id="@+id/edName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="NOMBRE"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/edSurname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="APELLIDO"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/tvCycle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CICLO" />
+
+        <Spinner
+            android:id="@+id/spCycle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tvCourse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CURSO" />
+
+        <RadioGroup
+            android:id="@+id/rg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/rbFirst"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="First" />
+
+            <RadioButton
+                android:id="@+id/rbSecond"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Second" />
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/bAdd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="guardar"
+                android:text="Add" />
+
+            <Button
+                android:id="@+id/bRemove"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="borrarAlumne"
+                android:text="remove" />
+
+            <Button
+                android:id="@+id/bUpdate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="modificarAlumno"
+                android:text="UPDATE" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/bFindDNI"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="findID"
+                android:text="FIND BY DNI" />
+
+            <Button
+                android:id="@+id/bFindCycle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="consultarCiclo"
+                android:text="FIND BY CYCLE" />
+
+            <Button
+                android:id="@+id/bFindCourse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="consultarCicloCurso"
+                android:text="FIND BY COURSE" />
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
