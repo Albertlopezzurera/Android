@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D6D6D6">
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintBottom_toTopOf="@+id/etTitulo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </ListView>
+
+    <EditText
+        android:id="@+id/etTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/seekBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        app:layout_constraintBottom_toTopOf="@+id/repeatButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/repeatButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="8dp"
+        android:background="@color/teal_200"
+        android:onClick="buttonRepeat"
+        app:layout_constraintBottom_toBottomOf="@+id/atrasButton"
+        app:layout_constraintEnd_toStartOf="@+id/atrasButton"
+        app:layout_constraintTop_toTopOf="@+id/atrasButton"
+        app:srcCompat="@drawable/ic_outline_repeat_24" />
+
+    <ImageButton
+        android:id="@+id/atrasButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="8dp"
+        android:background="@color/teal_200"
+        android:onClick="buttonAtras"
+        app:layout_constraintBottom_toBottomOf="@+id/pauseButton"
+        app:layout_constraintEnd_toStartOf="@+id/pauseButton"
+        app:layout_constraintTop_toTopOf="@+id/pauseButton"
+        app:srcCompat="@drawable/ic_baseline_skip_previous_24" />
+
+    <ImageButton
+        android:id="@+id/pauseButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="58dp"
+        android:layout_marginBottom="16dp"
+        android:background="@color/teal_200"
+        android:onClick="buttonPause"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_outline_pause_circle_outline_24" />
+
+    <ImageButton
+        android:id="@+id/playButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="58dp"
+        android:layout_marginBottom="16dp"
+        android:background="@color/teal_200"
+        android:onClick="buttonPlay"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_outline_play_circle_outline_24" />
+
+    <ImageButton
+        android:id="@+id/nextButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:background="@color/teal_200"
+        android:onClick="buttonNext"
+        app:layout_constraintBottom_toBottomOf="@+id/playButton"
+        app:layout_constraintStart_toEndOf="@+id/playButton"
+        app:layout_constraintTop_toTopOf="@+id/playButton"
+        app:srcCompat="@drawable/ic_baseline_skip_next_24" />
+
+    <ImageButton
+        android:id="@+id/stopButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:background="@color/teal_200"
+        android:onClick="buttonStop"
+        app:layout_constraintBottom_toBottomOf="@+id/nextButton"
+        app:layout_constraintStart_toEndOf="@+id/nextButton"
+        app:layout_constraintTop_toTopOf="@+id/nextButton"
+        app:srcCompat="@drawable/ic_outline_stop_circle_24" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
