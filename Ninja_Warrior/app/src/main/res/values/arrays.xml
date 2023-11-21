@@ -1,0 +1,12 @@
+<resources>
+        <string-array name="ninja">
+            <item>ninja 1</item>
+            <item>ninja 2</item>
+            <item>ninja 3</item>
+        </string-array>
+        <string-array name="ninjatipo">
+            <item>ninja1</item>
+            <item>ninja2</item>
+            <item>ninja3</item>
+        </string-array>
+</resources>

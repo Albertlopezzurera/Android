@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_config"
+        android:icon="@drawable/conf"
+        android:iconTint="#090909"
+        android:title="Configuración"
+        app:showAsAction="ifRoom" />
+    <!-- title: @string para que lo coja de ahi y cambie el idioma-->
+    <item
+        android:id="@+id/action_inf"
+        android:icon="@drawable/info"
+        android:iconTint="#000000"
+        android:title="Información"
+        app:showAsAction="ifRoom" />
+
+</menu>
